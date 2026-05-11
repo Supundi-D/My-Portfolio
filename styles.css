@@ -88,8 +88,55 @@ h2 {
 }
 footer {
   text-align: center;
-  padding: 30px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background: #f78db6;
   color: #fff;
-  margin-top: 60px;
+  padding: 16px 0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  background: white;
+}
+
+.skills-table thead {
+  background:#f78db6;
+  color: white;
+}
+
+.skills-table th {
+  padding: 18px;
+  font-size: 17px;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.skills-table td {
+  padding: 16px 18px;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.skills-table tbody tr:nth-child(even) {
+  background: #faf8f9;
+}
+
+.skills-table tbody tr:hover {
+  background: #eef5ff;
+  transition: 0.3s;
+}
+
+.skills-table td:first-child {
+  font-weight: 600;
+  color: #6e4668;
+  width: 30%;
 }
